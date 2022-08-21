@@ -15,6 +15,7 @@ runs:
       uses: actions/download-artifact@v3       
       with:
         name: greetings-jar
+        path: build/libs
     - id: test-run
       env:
         ARGS: ${{ inputs.arguments-to-print }}
