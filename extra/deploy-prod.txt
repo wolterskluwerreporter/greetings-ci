@@ -1,7 +1,7 @@
 deploy-prod:
   
     needs: [build, test-run]
-    if: github.event.pull_request.merged == 'true' && github.ref == 'refs/heads/main' 
+    if: github.ref == 'refs/heads/main' 
     
     runs-on: ubuntu-latest
     environment: 
