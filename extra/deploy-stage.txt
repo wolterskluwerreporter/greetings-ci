@@ -24,7 +24,7 @@
           tag_name: v${{ needs.build.outputs.artifact-tag || github.event.inputs.myVersion }}
           prerelease: true
           draft: true
-          name: github.ref_name
+          name: ${{ github.ref_name }}
           files: |
             greetings-ci-${{ needs.build.outputs.artifact-tag || github.event.inputs.myVersion }}.jar
             
