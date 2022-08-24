@@ -1,4 +1,4 @@
-deploy-prod:
+  deploy-prod:
   
     needs: [build, test-run]
     if: github.ref == 'refs/heads/main' 
